@@ -116,5 +116,5 @@ fi
 eval $(perl -I/home/adman/perl5/lib/perl5 -Mlocal::lib)
 
 # added by adman
-export PATH=/sbin:$PATH
+export PATH=/sbin:$HOME/.local/bin:$PATH
 export TERM=xterm-256color
