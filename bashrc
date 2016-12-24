@@ -118,3 +118,13 @@ eval $(perl -I/home/adman/perl5/lib/perl5 -Mlocal::lib)
 # added by adman
 export PATH=/sbin:$HOME/.local/bin:$PATH
 export TERM=xterm-256color
+
+# The next line updates PATH for the Google Cloud SDK.
+#source '/home/adman/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+#source '/home/adman/google-cloud-sdk/completion.bash.inc'
+
+export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
