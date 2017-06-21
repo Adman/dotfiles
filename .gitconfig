@@ -1,0 +1,11 @@
+[user]
+	name = Adrian Matejov
+	email = a.matejov@centrum.sk
+[color]
+    diff = always
+    ui = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[core]
+    excludesfile = ~/.gitignore
+	editor = vim
