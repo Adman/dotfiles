@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -103,3 +104,9 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" NERDTree
+" autoclose vim when only nerdtree is opened
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" map nerdtree to ctrl+n
+map <C-n> :NERDTreeToggle<CR>
