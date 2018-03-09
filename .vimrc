@@ -18,6 +18,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,6 +46,8 @@ set expandtab
 
 autocmd FileType make set tabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType c set tabstop=8 shiftwidth=8 noexpandtab
+
+set updatetime=100
 
 "show bracket match
 set showmatch
