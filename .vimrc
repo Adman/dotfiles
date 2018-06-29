@@ -46,6 +46,7 @@ set expandtab
 
 autocmd FileType make set tabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType c set tabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType proto set tabstop=8 shiftwidth=8 noexpandtab
 
 set updatetime=100
 
@@ -72,6 +73,9 @@ set ttimeoutlen=50
 "indenting multiple lines
 vmap <Tab> >
 vmap <S-Tab> <
+
+"map ctrl+backspace to delete previous word in insert mode
+imap <C-BS> <C-W>
 
 let myrc = getcwd().'/.vim'
 if filereadable(myrc)
