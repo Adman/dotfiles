@@ -1,11 +1,12 @@
 [user]
 	name = Adrian Matejov
-	email = a.matejov@centrum.sk
+	email = ado.matejov@gmail.com
 [color]
     diff = always
     ui = true
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
 [core]
     excludesfile = ~/.gitignore
 	editor = vim
