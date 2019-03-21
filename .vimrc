@@ -19,6 +19,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,7 +47,7 @@ set expandtab
 
 autocmd FileType make set tabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType c set tabstop=8 shiftwidth=8 noexpandtab
-autocmd FileType proto set tabstop=8 shiftwidth=8 noexpandtab
+"autocmd FileType proto set tabstop=8 shiftwidth=8 noexpandtab
 
 set updatetime=100
 
@@ -117,3 +118,10 @@ let g:airline_symbols.linenr = ''
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " map nerdtree to ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+
+" vimtex
+let g:tex_flavor='latex'
+"let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
