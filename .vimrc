@@ -75,6 +75,13 @@ set ttimeoutlen=50
 vmap <Tab> >
 vmap <S-Tab> <
 
+"keep selection after tab
+vnoremap < <gv
+vnoremap > >gv
+
+" if I press <tab> in command line, show me all options
+set wildmenu
+
 "map ctrl+backspace to delete previous word in insert mode
 imap <C-BS> <C-W>
 
